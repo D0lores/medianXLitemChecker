@@ -18,13 +18,15 @@ function pausecomp(millis)
     while(curDate-date < millis);
 }
 
-/*function findDiff(str1, str2){
+function findDiff(str1, str2){
   let diff= "g";
   let i = 0;
   let j = 0;
   if(str1[0]=='^')
+  {
       i=1;
       j=1;
+  }
     while (i < str1.length) {
         if (str1[i] == '#') {
             return parseInt(str2.substr(i-j, str2.length))
@@ -36,8 +38,10 @@ function pausecomp(millis)
     }
   return diff;
 }
-*/
 
+
+/*
+orginal
 function findDiff(str1, str2){
   let diff= "g";
   let i = 0;
@@ -51,6 +55,7 @@ function findDiff(str1, str2){
     }
   return diff;
 }
+*/
 
 const COLOR_CODES = [
     [100, "#4dff00"],
