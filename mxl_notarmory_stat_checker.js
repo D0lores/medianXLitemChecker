@@ -18,7 +18,7 @@ function pausecomp(millis)
     while(curDate-date < millis);
 }
 
-function findDiff(str1, str2){
+/*function findDiff(str1, str2){
   let diff= "g";
   let i = 0;
   let j = 0;
@@ -33,6 +33,21 @@ function findDiff(str1, str2){
         ++i;
         
         
+    }
+  return diff;
+}
+*/
+
+function findDiff(str1, str2){
+  let diff= "g";
+  let i = 0;
+  let j = 0;
+    while (i < str1.length) {
+        if (str1[i] == '#') {
+            return parseInt(str2.substr(i, str2.length))
+        }
+        ++i;
+        ++j;
     }
   return diff;
 }
