@@ -105,7 +105,7 @@ function insert_ranges(html, attr, minMax, val, arrayVal)
                     reAt = reAt.replace("%", "\\%")
                     reAt = reAt.replace("#", "\\d+")
                     //reAt = "\\w*" + reAt + "$"
-                    if(reAt[0]='^')
+                    if(reAt[0]=="^")
                         reAt = reAt + "$"
                     else 
                        reAt = "\\w*" + reAt + "$"
