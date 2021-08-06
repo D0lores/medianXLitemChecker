@@ -27,9 +27,7 @@ function findDiff(str1, str2){
             return parseInt(str2.substr(j, str2.length))
         }
         ++i;
-        if(str1[i])=="^")
-            continue;
-        else
+        if(str1[i])!="^")
             ++j;
     }
   return diff;
