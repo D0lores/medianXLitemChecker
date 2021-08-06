@@ -104,7 +104,8 @@ function insert_ranges(html, attr, minMax, val, arrayVal)
                     reAt = reAt.replace("+", "\\+")
                     reAt = reAt.replace("%", "\\%")
                     reAt = reAt.replace("#", "\\d+")
-                    reAt = "\\w*" + reAt + "$"
+                    //reAt = "\\w*" + reAt + "$"
+                    reAt = reAt + "$"
                     const reg = new RegExp(reAt)
                     stats.forEach(att => {
 
