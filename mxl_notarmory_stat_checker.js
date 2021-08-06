@@ -24,10 +24,13 @@ function findDiff(str1, str2){
   let j = 0;
     while (i < str1.length) {
         if (str1[i] == '#') {
-            return parseInt(str2.substr(i, str2.length))
+            return parseInt(str2.substr(j, str2.length))
         }
         ++i;
-        ++j;
+        if(str1[i])=="^")
+            continue;
+        else
+            ++j;
     }
   return diff;
 }
