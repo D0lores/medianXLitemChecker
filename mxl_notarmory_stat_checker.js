@@ -26,11 +26,9 @@ function findDiff(str1, str2){
         if (str1[i] == '#') {
             return parseInt(str2.substr(j, str2.length))
         }
-        if(str1[i])=='^')
-            ++i;
-        else
-            ++j;
-            ++i;
+     
+        ++j;
+        ++i;
         
         
     }
