@@ -78,8 +78,8 @@ function insert_ranges(html, attr, minMax, val, arrayVal)
 
 (function() {
     'use strict';
-    const sacred_unique_url = "https://raw.githubusercontent.com/SainteCroquette/medianXLitemChecker/main/sacred_unique.json"
-    const set_url = "https://raw.githubusercontent.com/SainteCroquette/medianXLitemChecker/main/set.json"
+    const sacred_unique_url = "https://raw.githubusercontent.com/D0lores/medianXLitemChecker/main/sacred_unique.json"
+    const set_url = "https://raw.githubusercontent.com/D0lores/medianXLitemChecker/main/set.json"
     fetch(sacred_unique_url)
         .then(response => response.text())
         .then((sacred_uniques) => {
