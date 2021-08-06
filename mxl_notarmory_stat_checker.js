@@ -96,7 +96,8 @@ function insert_ranges(html, attr, minMax, val, arrayVal)
     let idx = html.indexOf(attr) + attr.length
     let before = html.substring(0, idx)
     let after = html.substring(idx);
-    let prop = (val - minMax[0]) / (minMax[1] - minMax[0]) * 100
+    //let prop = (val - minMax[0]) / (minMax[1] - minMax[0]) * 100
+    let prop = (val/minMax[1]) * 100
     arrayVal.push(prop)
     return before +"<span style=\"color:grey;padding-left:5px;\">("+ minMax[0] + " - " + minMax[1] + ") - </span><span style=\"color:"+color_result(prop)+";\">" + prop.toFixed(0)+ "%</span>" + after
 }
